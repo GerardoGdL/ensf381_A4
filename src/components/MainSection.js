@@ -4,7 +4,6 @@ import testimonials from '../data/testimonials';
 import "../App.css";
 
 function MainSection() {
-    // Select 3 random courses
     const [randomCourses, setRandomCourses] = useState([]);
     const [randomTestimonials, setRandomTestimonials] = useState([]);
 

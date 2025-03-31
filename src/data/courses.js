@@ -1,6 +1,4 @@
 import course1 from '../images/course1.jpg';
-import course2 from '../images/course2.jpg';
-
 
 const courses = [
     {

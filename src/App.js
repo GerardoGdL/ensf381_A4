@@ -1,17 +1,21 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from "./components/Homepage.js"
-import Courses from "./data/courses.js"
-//import Login from "./data/login.js"
+import Home from './components/Homepage.js';
+import CoursesPage from './components/CoursesPage.js';
+import LoginPage from './components/LoginPage.js';
+import { AuthProvider } from './components/LoginForm';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/courses" element={<Courses />} />
-      </Routes>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 

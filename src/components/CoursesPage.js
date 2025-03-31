@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import CourseCatalog from "./CourseCatalog";
+import EnrollmentList from "./EnrollmentList";
+import Header from "./Header";
+import Footer from "./Footer";
 
-function Courses() {
+function CoursesPage() {
     return(
         <div className="courses-page">
             <Header />
@@ -13,18 +17,4 @@ function Courses() {
     );
 }
 
-function CourseItem() {
-    ;
-}
-
-function EnrolledCourse() {
-    ;
-}
-
-function EnrollmentList() {
-    ;
-}
-
-function CourseCatalog() {
-    ;
-}
+export default CoursesPage;
