@@ -1,3 +1,6 @@
+// Gerardo Garcia de Leon UCID: 30172099
+//Kiersten Konig UCID: 30171448
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
